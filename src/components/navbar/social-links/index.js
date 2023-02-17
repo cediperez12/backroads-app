@@ -5,7 +5,12 @@ const SocialLinks = ({ icons }) => {
     <ul className="nav-icons">
       {icons.map((icon) => (
         <li key={icon.id}>
-          <a href={icon.href} target="_blank" className="nav-icon">
+          <a
+            href={icon.href}
+            target="_blank"
+            className="nav-icon"
+            rel="noreferrer"
+          >
             <i className={icon.icon}></i>
           </a>
         </li>
